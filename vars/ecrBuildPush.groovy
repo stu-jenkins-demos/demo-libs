@@ -7,6 +7,7 @@ def call(body) {
 
 
     def awsCreds = getValueOrDefault("${config.awsCreds}","ecr_push_pull")
+    echo awsCreds
     def awsRegion = getValueOrDefault("${config.awsRegion}","eu-west-1")
     def ecrRepo =  getValueOrDefault("${config.ecrRepo}","024942195839.dkr.ecr.eu-west-1.amazonaws.com/stubrownuk123")
     def ecrTag = getValueOrDefault("${config.ecrTag}","latest")
