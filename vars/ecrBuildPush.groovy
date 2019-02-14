@@ -6,19 +6,14 @@ def call(body) {
     body()
 
 
-    //def awsCreds = getValueOrDefault("${config.awsCreds}","ecr_push_pull")
-    //def awsRegion = getValueOrDefault("${config.awsRegion}","eu-west-1")
-    //def ecrRepo =  getValueOrDefault("${config.ecrRepo}","024942195839.dkr.ecr.eu-west-1.amazonaws.com/stubrownuk123")
-    //def ecrTag = getValueOrDefault("${config.ecrTag}","latest")
-    //def awscliContainer = getValueOrDefault("${config.awscliContainer}","mesosphere/aws-cli:1.14.5")
-    //def dockerContainer = getValueOrDefault("${config.dockerContainer}","docker:18.06")
+    def awsCreds = getValueOrDefault("${config.awsCreds}","ecr_push_pull")
+    def awsRegion = getValueOrDefault("${config.awsRegion}","eu-west-1")
+    def ecrRepo =  getValueOrDefault("${config.ecrRepo}","024942195839.dkr.ecr.eu-west-1.amazonaws.com/stubrownuk123")
+    def ecrTag = getValueOrDefault("${config.ecrTag}","latest")
+    def awscliContainer = getValueOrDefault("${config.awscliContainer}","mesosphere/aws-cli:1.14.5")
+    def dockerContainer = getValueOrDefault("${config.dockerContainer}","docker:18.06")
     
-    def awsCreds = ${config.awsCreds}
-    def awsRegion = ${config.awsRegion}
-    def ecrRepo =  ${config.ecrRepo}
-    def ecrTag = ${config.ecrTag}
-    def awscliContainer = ${config.awscliContainer}
-    def dockerContainer = ${config.dockerContainer}
+    
 
 
     pipeline {
