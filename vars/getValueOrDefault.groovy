@@ -6,13 +6,12 @@ def call(String actualValue,String defaultValue) {
         echo "string is null or empty"
     }
     if (!actualValue?.trim()) {
-
-
         echo "not set $actualValue"
         echo "sending defauly value $defaultValue"
         return defaultValue?.trim()
-    }else{
+    } else {
         echo " set $actualValue"
-    echo "sending actual value $actualValue"
-    return actualValue?.trim()
+        echo "sending actual value $actualValue"
+        return actualValue?.trim()
+    }
 }
