@@ -5,6 +5,10 @@ def call(String actualValue,String defaultValue) {
     if (!actualValue?.trim()) {
         echo "string is null or empty"
     }
+    if (actualValue.trim() == "null") {
+        echo "string is really null or empty"
+    }
+
     if (!actualValue?.trim()) {
         echo "not set $actualValue"
         echo "sending defauly value $defaultValue"
