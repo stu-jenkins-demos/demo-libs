@@ -10,8 +10,7 @@ def call(String actualValue,String defaultValue) {
 //    }
 
     //if ((!actualValue?.trim()) or actualValue.trim() == "null") {
-    //if (actualValue.trim() == "null") {
-    if (!(actualValue?.trim())){
+    if (actualValue.trim() == "null") {
         //if ((!actualValue)){
         //echo "not set $actualValue"
         //echo "sending defauly value $defaultValue"
