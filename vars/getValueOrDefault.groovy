@@ -7,8 +7,11 @@ def call(String actualValue,String defaultValue) {
     }
     //if (!actualValue?.trim()) {
     if (!actualValue) {
+        echo "not set $actualValue"
         echo "sending defauly value $defaultValue"
         return defaultValue?.trim()
+    }else{
+        echo " set $actualValue"
     }
     echo "sending actual value $actualValue"
     return actualValue?.trim()
