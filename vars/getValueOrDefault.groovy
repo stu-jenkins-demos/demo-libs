@@ -5,8 +5,8 @@ def call(String actualValue,String defaultValue) {
     if (!actualValue){
         print "its null test"
     }
-
-    if (!actualValue?.trim()) {
+    //if (!actualValue?.trim()) {
+    if (!actualValue) {
         echo "sending defauly value $defaultValue"
         return defaultValue?.trim()
     }
