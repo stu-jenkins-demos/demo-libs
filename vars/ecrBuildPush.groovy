@@ -1,5 +1,19 @@
 def call(body) {
 
+    /*
+    to call example 
+    
+    @Library('jenkins-shared-library') _
+    ecrBuildPush {
+   
+        awsRegion = "eu-west-1"
+        ecrRepo =  "024942195839.dkr.ecr.eu-west-1.amazonaws.com/stubrownuk123"
+        ecrTag = "test122"
+        awscliContainer = "mesosphere/aws-cli:1.14.5"
+        dockerContainer = "docker:18.06"
+    }
+    
+    */
     def config = [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
